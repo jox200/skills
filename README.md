@@ -55,3 +55,17 @@ This is your shortcut to great interfaces. A shortcut to stand out in a sea of s
 - **[mobile-native](./skills/mobile-native/SKILL.md)** — Make your web app feel native on a phone: sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, safe areas, and the rest of the small fixes that separate a website from an app.
 - **[break-ui](./skills/break-ui/SKILL.md)** — Try to break the UI you built with worst-case data: long names, unusual emails, one-letter names, huge counts, empty lists, long labels.
 - **[ask-sonner](./skills/ask-sonner/SKILL.md)** — Your guide to working with [Sonner](https://sonner.emilkowal.ski), my toast library. Contains setup, styling, recipes, and fixes for the most common issues.
+
+## SEO plugin
+
+[`plugins/claude-seo`](./plugins/claude-seo) is a vendored copy of [jox200/claude-seo](https://github.com/jox200/claude-seo) (MIT, by [AgriciDaniel](https://github.com/AgriciDaniel)): 26 SEO sub-skills and 19 sub-agents covering technical SEO, content quality (E-E-A-T), Schema.org, AI search (GEO), local, e-commerce, hreflang, backlinks, and Google APIs.
+
+Its skills call bundled Python scripts through `${CLAUDE_PLUGIN_ROOT}`, so install it as a Claude Code plugin rather than copying the skill folders:
+
+```bash
+/plugin marketplace add jox200/skills
+/plugin install claude-seo@jox200-skills
+/seo setup
+```
+
+Requires Python 3.10+. See the [plugin README](./plugins/claude-seo/README.md) for commands and optional extensions.

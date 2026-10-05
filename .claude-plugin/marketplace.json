@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jox200-skills",
+  "owner": {
+    "name": "jox200"
+  },
+  "metadata": {
+    "description": "Design, animation, and SEO skills for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "claude-seo",
+      "source": "./plugins/claude-seo",
+      "description": "SEO analysis plugin: 26 sub-skills and 19 sub-agents covering technical SEO, E-E-A-T content quality, Schema.org, AI search (GEO), local, e-commerce, hreflang, backlinks, and Google APIs. Vendored from jox200/claude-seo (MIT).",
+      "author": {
+        "name": "AgriciDaniel",
+        "url": "https://github.com/AgriciDaniel"
+      },
+      "category": "marketing",
+      "homepage": "https://github.com/jox200/claude-seo",
+      "keywords": ["seo", "technical-seo", "schema-markup", "geo", "ai-search", "local-seo", "core-web-vitals"]
+    }
+  ]
+}
